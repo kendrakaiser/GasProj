@@ -42,4 +42,14 @@ boxplot(N2O_fluxNug~smplrnd,data=transition, main="Transition",
 boxplot(N2O_fluxNug~smplrnd,data=riparian, main="Riparian",
         xlab="Sampling Round", ylab="N2O Flux ug m2/hr", names=rounds$r.start)
   abline(h=0)
+  
+  
+par(mfrow=c(3,1))
+boxplot(VWC~smplrnd,data=uplands, main="Uplands",
+          xlab="Sampling Round", ylab="VWC (%)", names=rounds$r.start, ylim=c(0,65))
+boxplot(VWC~smplrnd,data=transition, main="Transition",
+          xlab="Sampling Round", ylab="VWC (%)", names=rounds$r.start, ylim=c(0,65))
+boxplot(VWC~smplrnd,data=riparian, main="Riparian",
+          xlab="Sampling Round", ylab="VWC (%)", names=rounds$r.start, ylim=c(0,65))
+
 
