@@ -34,13 +34,13 @@ transition<-subset(subdata, category == 'transition')
 
 par(mfrow=c(3,1))
 boxplot(N2O_fluxNug~smplrnd,data=uplands, main="Uplands",
-        xlab="Sampling Round", ylab="N2O Flux ug m2/hr", names=rounds$r.start)
+        xlab="Sampling Round", ylab="N2O Flux ug m2/hr", names=rounds$r.start, ylim=c(-10,40))
   abline(h=0)
 boxplot(N2O_fluxNug~smplrnd,data=transition, main="Transition",
-        xlab="Sampling Round", ylab="N2O Flux ug m2/hr", names=rounds$r.start)
+        xlab="Sampling Round", ylab="N2O Flux ug m2/hr", names=rounds$r.start, ylim=c(-10,40))
   abline(h=0)
 boxplot(N2O_fluxNug~smplrnd,data=riparian, main="Riparian",
-        xlab="Sampling Round", ylab="N2O Flux ug m2/hr", names=rounds$r.start)
+        xlab="Sampling Round", ylab="N2O Flux ug m2/hr", names=rounds$r.start, ylim=c(-10,40))
   abline(h=0)
   
   
